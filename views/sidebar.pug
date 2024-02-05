@@ -1,0 +1,11 @@
+// create a sidebar from a title and an array of objs [{ href:"#test", name:"Yes" }]
+mixin sidebar(title, list)
+    div.column.is-2
+        aside.menu.section
+            p.menu-label=title
+            ul.menu-list
+                each item in list
+                    li
+                        a(href=item.href)=item.name
+
++sidebar("Main", [{ href:"#test", name:"Yes" }])
