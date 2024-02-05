@@ -8,5 +8,5 @@ mixin navbar(app_name, elements, activePage)
                 div.navbar-item.has-dropdown.is-hoverable
                     a.navbar-link="Mods"
                     each item in elements
-                        var i = activePage == item.name ? 'navbar-item is-active': 'navbar-item' 
+                        - var i = activePage == item.name ? 'navbar-item is-active': 'navbar-item' 
                         a(class=i, href=item.href)=item.name
