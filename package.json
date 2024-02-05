@@ -1,0 +1,25 @@
+{
+  "name": "thermal_website",
+  "version": "0.0.1",
+  "description": "Thermal Serie Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mrthomas20121/ThermalSerieWebsite.git"
+  },
+  "keywords": [
+    "Website"
+  ],
+  "author": "Mrthomas20121",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mrthomas20121/ThermalSerieWebsite/issues"
+  },
+  "homepage": "https://github.com/Mrthomas20121/ThermalSerieWebsite#readme",
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}
