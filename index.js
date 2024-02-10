@@ -1,12 +1,6 @@
 const pug = require('pug');
 const fs = require('fs');
 
-let html = pug.renderFile('./page/index.pug', {
-    pretty: true
-});
-
-console.log(html);
-
 /**
  * Render a pug file
  * @param {string} fileName 
@@ -22,3 +16,9 @@ function render(fileName, properties={}) {
 
     fs.writeFileSync(outputFile, html, 'utf8');
 }
+
+render('./page/index.pug', {
+    page_title: 'Minecraft Docs test',
+    site_title: 'Minecrft test Website',
+    pretty: true
+});

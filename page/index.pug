@@ -2,4 +2,35 @@ doctype html
 html
     include ../template/header.pug
     body
-        p="Welcome to the documentation for Cofh Mods(Thermal Serie, Ensorcelation, etc...)"
+        div.columns
+            include ../template/sidebar.pug
+            +sidebar('Mods', [
+                {
+                    name: 'Mod 1',
+                    href: '#'
+                },
+                {
+                    name: 'Mod 2',
+                    href: '#'
+                },
+                {
+                    name: 'Mod 3',
+                    href: '#'
+                },
+                {
+                    name: 'Mod 4',
+                    href: '#'
+                },
+                {
+                    name: 'Mod 5',
+                    href: '#'
+                },
+                {
+                    name: 'Mod 6',
+                    href: '#'
+                }
+            ])
+            div.column
+                section.section
+                    h1.title=page_title
+                    p="Welcome to the Minecraft docs test site"
